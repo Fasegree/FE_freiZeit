@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+}
+.card {
+    position: relative;
+    height: 300px;
+    width: 200px;
+    background-color: bisque;
+  
+}
+.card .card_img {
+    position: relative;
+    margin: 0 auto;
+    height: 100px;
+    width: 100%;
+    background-color: #999;
+}
+.card__favorit {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    filter: hue-rotate(60deg);
+}
+.card__favorit svg {
+     
+    width: 30px;
+    height: 30px;
+
+}
+.red {
+    fill: #ff00b6;
+}
+.svg_star {
+    fill: #999;
+    height: 22px;
+
+}
+.svg_gold {
+    fill: #ffd700;
+}
+
+.card__description {
+    position: relative;
+    padding: 15px;
+}
+.sale_count {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+    background-color: #d98548;
+     border-radius: 5px;
+}
+.card__prices {
+   display: flex;
+   justify-content: space-between;
+}
+.card__price-cards__font {
+    font-weight: 600;
+}
+.grey {
+    color: #999;
+}
+.card__price-bar  {
+text-align: right;
+     
+}
+.card__price-bar__font {
+    text-align: right;
+    
+}
+.card__title {
+/*    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 200px; */ /*для 1й строки скрыть лишний текст...*/
+
+    padding-top: 5px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.card__stars {
+    padding-top: 5px;
+    display: flex;
+}
+.btn-add-to-cart {
+    margin-top: 20px;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: #0f0;
+    color: #fff;
+    padding: 10px;
+}
